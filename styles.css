@@ -1,0 +1,274 @@
+/* -------------------------------------
+    TAGS STYLE
+------------------------------------- */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  color: #c60055;
+  text-align: center;
+}
+
+h3 {
+  color: #808080;
+  text-align: center;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: bold;
+}
+
+li {
+  font-size: 18px;
+  padding: 5px;
+}
+
+td {
+  width: 50%;
+}
+
+p {
+  margin: 10px;
+  color: #808080;
+  font-size: 16;
+}
+
+p::selection {
+  color: white;
+  background-color: #c60055;
+}
+
+.root {
+  background-color: #f2f2f2;
+}
+
+/* -------------------------------------
+    TEXT
+------------------------------------- */
+.font, .characteristicContainer > div, .fontBold, .characteristicContainer > div > div {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: normal;
+}
+
+.fontBold, .characteristicContainer > div > div {
+  font-weight: 800;
+}
+
+/* -------------------------------------
+    BUTTONS
+------------------------------------- */
+.ref {
+  border: none;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 15px 32px;
+  margin: 20px;
+  width: 80%;
+  height: 50px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  text-align: center;
+  box-shadow: none;
+}
+
+.btn-outline-primary {
+  border-color: #c60055 !important;
+  color: #c60055 !important;
+  margin: 5px;
+}
+
+.btn-outline-primary:hover {
+  border-color: #ff80ab !important;
+  background-color: #ff80ab !important;
+}
+
+.ref {
+  background-color: #c60055;
+  color: white;
+}
+
+.ref:hover {
+  background-color: #ffb2dd;
+  color: #c60055;
+}
+
+/* -------------------------------------
+    IMAGES
+------------------------------------- */
+#mainImage {
+  object-fit: cover;
+  width: 100%;
+  height: 200px;
+  object-position: 0 30%;
+}
+
+.images {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.ulImage, .senseImageOutOfTd {
+  margin: 10px;
+  width: 80%;
+  border: solid 3px #c60055;
+  border-radius: 30%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+@media (max-width: 599px) {
+  .tdImage {
+    display: none;
+  }
+}
+@media (min-width: 600px) {
+  .senseImageOutOfTd {
+    display: none;
+  }
+}
+/* -------------------------------------
+    HEADER && FOOTER
+------------------------------------- */
+.header {
+  padding: 10px;
+  height: 50px;
+  margin: 0px;
+  background-color: #ff80ab;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.links {
+  vertical-align: center;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  font-size: medium;
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+  padding: 10px;
+  margin: 10px;
+}
+
+.links:hover {
+  color: #c60055;
+}
+
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  bottom: 0;
+  right: 0;
+  height: 40px;
+  width: 100%;
+  margin-top: 30px;
+  background-color: #65727A;
+  color: white;
+  justify-content: center;
+  align-items: center;
+}
+
+/* -------------------------------------
+   SENSES PAGE
+------------------------------------- */
+.liTitle {
+  color: #c60055;
+  font-size: 22px;
+}
+
+.senseGroup {
+  margin: 10px;
+}
+
+/* -------------------------------------
+    CHARACTERISTICS PAGE
+------------------------------------- */
+.characteristicContainer {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.characteristicContainer > div {
+  margin: 20px;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 20px;
+  width: 300px;
+}
+
+.characteristicContainer > div > div {
+  text-align: center;
+  background-color: #c60055;
+  color: white;
+}
+
+/*--------------------------------------
+    CONTACT
+------------------------------------- */
+.contact-input-group {
+  width: 50%;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 499px) {
+  .double-input {
+    display: none;
+  }
+}
+@media (min-width: 500px) {
+  .single-input {
+    display: none;
+  }
+}
+/* -------------------------------------
+    COMMON
+------------------------------------- */
+.alert {
+  margin-left: 30px;
+  margin-right: 30px;
+  border-radius: 30%;
+}
+
+.paper {
+  margin-top: 0px;
+  height: 100%;
+  padding: 20px;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.grid {
+  background-color: #c60055;
+  display: grid;
+  padding: 10px;
+  column-gap: 10px;
+  row-gap: 10px;
+  grid-template-columns: auto auto auto;
+}
+
+.gridItem {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: white;
+  font-size: 20px;
+}
+
+.flex-end {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 10px;
+}
+
+/*all a that is inmediatly contained in a div will aplply for the css*/
+/*all a that is inside in a div will apply for the css */
+/*all the inputs of type text*/
+
+/*# sourceMappingURL=styles.css.map */
