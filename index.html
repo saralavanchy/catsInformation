@@ -2,15 +2,44 @@
 <html>
     <head>
         <title>cats</title>
-        <link rel="stylesheet" type="text/css" href="styles.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="./public/styles/styles.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     </head>
     <body class="root">
-        <div class="header">
-            <a href="senses.html" class="links"> SENSES </a>
-            <a href="integrationWithHumans.html" class="links"> INTERACTION WITH HUMANS </a>
-            <a href="characteristics.html" class="links"> CHARACTERISTICS </a>
+        <!-- HEADER -->
+        <div id="header">
+            <div class="web header">
+                <a href="./src/senses.html" class="links"> SENSES </a>
+                <a href="./src/integrationWithHumans.html" class="links"> INTERACTION WITH HUMANS </a>
+                <a href="./src/characteristics.html" class="links"> CHARACTERISTICS </a>
+            </div>
+            <div class="mobile header">
+                <div class="tooltip">
+                    <i  onclick="window.location.href='./src/senses.html'" 
+                        class="small material-icons icon-button tooltip">
+                        hearing
+                    </i>
+                    <span class="tooltiptext fontBold">Senses</span>
+                </div>
+                <div class="tooltip">
+                    <i  onclick="window.location.href='./src/integrationWithHumans.html'" 
+                        class="small material-icons icon-button tooltip">
+                        transfer_within_a_station
+                    </i>
+                    <span class="tooltiptext fontBold">Interaction</span>
+                </div>
+                <div class="tooltip">
+                    <i  onclick="window.location.href='./src/characteristics.html'" 
+                        class="small material-icons icon-button tooltip">
+                        pets
+                    </i>
+                    <span class="tooltiptext fontBold">Characteristics</span>
+                </div>
+            </div>
         </div>
+
+        <!-- BODY -->
         <img id="mainImage" src="./public/images/20200307_130035.jpg" />
         <div class="paper">
             <h1 class="fontBold">CAT'S LIFE</h1>
@@ -20,8 +49,10 @@
                 It's simple, it's clear. You ask us and we will we there to answer all.
                 yours dudes.
             </p>
-            <button class="ref" onclick="window.location.href='contact.html'" align="center">Contact us</button>
+            <button class="ref" onclick="window.location.href='./src/contact.html'" align="center">Contact us</button>
         </div>
+
+        <!-- FOOTER -->
         <div class="footer">
             <span class="fontBold"> Copyrigth @2020 Sara Griselda Lavanchy</span>
         </div>

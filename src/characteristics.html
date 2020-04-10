@@ -2,15 +2,40 @@
 <html>
     <head>
         <title>cats</title>
-        <link rel="stylesheet" type="text/css" href="styles.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="../public/styles/styles.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     </head>
     <body>
-        <div class="header">
-            <a href="index.html" class="links"> HOME </a>
-            <a href="senses.html" class="links"> SENSES </a>
-            <a href="integrationWithHumans.html" class="links"> INTERACTION WITH HUMANS </a>
-            <a href="characteristics.html" class="links"> CHARACTERISTICS </a>
+        <div id="header">
+            <div class="web header">
+                <a href="../index.html" class="links"> HOME </a>
+                <a href="./senses.html" class="links"> SENSES </a>
+                <a href="./integrationWithHumans.html" class="links"> INTERACTION WITH HUMANS </a>
+            </div>
+            <div class="mobile header">
+                <div class="tooltip">
+                    <i  onclick="window.location.href='../index.html'" 
+                        class="small material-icons icon-button">
+                        home
+                    </i>
+                    <span class="tooltiptext fontBold">Home</span>
+                </div>
+                <div class="tooltip">
+                    <i  onclick="window.location.href='./senses.html'" 
+                        class="small material-icons icon-button tooltip">
+                        hearing
+                    </i>
+                    <span class="tooltiptext fontBold">Senses</span>
+                </div>
+                <div class="tooltip">
+                    <i  onclick="window.location.href='./integrationWithHumans.html'" 
+                        class="small material-icons icon-button tooltip">
+                        transfer_within_a_station
+                    </i>
+                    <span class="tooltiptext fontBold">Interaction</span>
+                </div>
+            </div>
         </div>
         <h1 class="fontBold">Characteristics</h1>
         <h2></h2>
